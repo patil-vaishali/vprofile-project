@@ -162,5 +162,9 @@
       <url>http://172.31.95.54:8081/repository/vpro-maven-group/</url>
     </repository>
   </repositories>
+   <properties>
+  <sonar.organization>gauravpatil0309</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>	
 </project>
 
