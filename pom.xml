@@ -164,4 +164,12 @@
   </repositories>
 </project>
 
+</project>
+ <properties>
+   <sonar.organization>gauravpatil0309</sonar.organization>
+   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+ </properties>
+</project>
+
+
 
