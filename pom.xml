@@ -161,7 +161,7 @@
     <distributionManagement>		    
     <repository>
       <id>vpro-maven-group</id>
-      <url>http://3.83.50.101:8081/repository/vpro-maven-group/</url>
+      <url>http://54.236.179.16:8081/repository/vpro-maven-group/</url>
     </repository>	    
  </distributionManagement>	    
 </project>
