@@ -5,7 +5,7 @@
 
   <servers>
     <server>
-      <id>maven-snapshots</id>
+      <id>nexus-snapshots</id>
       <username>admin</username>
       <password>GAURAv3990@</password>
     </server>
@@ -26,13 +26,4 @@
       <privateKey>/root/.ssh/authorized_keys</privateKey>
     </server>
   </servers>
-
-  <mirrors>
-    <mirror>
-      <id>vpro-maven-central</id>
-      <name>vpro-maven-central</name>
-      <url>http://54.236.179.16:8081/repository/vpro-maven-group/</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-  </mirrors>
  </settings>
