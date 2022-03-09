@@ -13,4 +13,12 @@
       <password>GAURAv3990@</password>
    </server> 
 </servers>
+<mirrors>
+    <mirror>
+      <id>maven-central</id>
+      <name>maven-central</name>
+      <url>http://54.236.179.16:8081/repository/maven-central/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>          
 </settings>
