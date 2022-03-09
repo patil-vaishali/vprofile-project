@@ -195,10 +195,6 @@
 </plugin>
 </plugins>
     </build>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://54.236.179.16:8081/repository/maven-snapshots/</url>
-   </snapshotRepository>
    <repository>
       <id>nexus-releases</id>
       <url>http://54.236.179.16:8081/repository/maven-releases/</url>
