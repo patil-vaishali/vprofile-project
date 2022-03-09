@@ -1,29 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
-
-  <servers>
+<?xml version='1.0' encoding='UTF-8'?>
+<settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
+          xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+          <servers>
+   <server>
+    <id>nexus-snapshots</id>
+      <username>admin</username>
+      <password>GAURAv3990@</password>
+   </server>
     <server>
-      <id>nexus-snapshots</id>
+    <id>nexus-releases</id>
       <username>admin</username>
       <password>GAURAv3990@</password>
-    </server>
-    <server>
-      <id>vprofile-release</id>
-      <username>admin</username>
-      <password>GAURAv3990@</password>
-    </server>
-        <server>
-        <id>vpro-maven-central</id>
-      <username>admin</username>
-      <password>GAURAv3990@</password>
-    </server>
-    <server>
-        <id>vpro-maven-group</id>
-      <username>admin</username>
-      <password>GAURAv3990@</password>
-      <privateKey>/root/.ssh/authorized_keys</privateKey>
-    </server>
-  </servers>
- </settings>
+   </server> 
+</servers>
+</settings>
