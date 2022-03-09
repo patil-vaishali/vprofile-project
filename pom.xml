@@ -138,6 +138,7 @@
                     </webApp>
                 </configuration>
             </plugin>
+	    
 		<!-- CODE COVERAGE -->
 		    <plugin>
 		        <groupId>org.jacoco</groupId>
@@ -160,12 +161,52 @@
 		            </execution>
 		        </executions>
 		</plugin>
-        </plugins>
+		<plugin>
+		   <artifactId>maven-deploy-plugin</artifactId>
+		   <version>2.8.1</version>
+		   <executions>
+		      <execution>
+			 <id>default-deploy</id>
+			 <phase>deploy</phase>
+			 <goals>
+			    <goal>deploy</goal>
+			 </goals>
+		      </execution>
+		   </executions>
+		</plugin>
+		<plugin>
+		   <groupId>org.apache.maven.plugins</groupId>
+		   <artifactId>maven-deploy-plugin</artifactId>
+		   <version>${maven-deploy-plugin.version}</version>
+		   <configuration>
+		      <skip>true</skip>
+		   </configuration>
+		</plugin>
+		<plugin>
+   <groupId>org.sonatype.plugins</groupId>
+   <artifactId>nexus-staging-maven-plugin</artifactId>
+   <version>1.5.1</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+   <configuration>
+      <serverId>nexus</serverId>
+      <nexusUrl>http://54.236.179.16:8081/</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
+</plugin>
+</plugins>
     </build>
     <distributionManagement>		    
-    <repository>
-      <id>vpro-maven-group</id>
-      <url>http://54.236.179.16:8081/repository/vpro-maven-group/</url>
-    </repository>	    
+    <snapshotrepository>
+      <id>nexus-snapshots</id>
+      <url>http://54.236.179.16:8081/nexus/content/repositories/maven-snapshots</url>
+    </snapshotrepository>	    
  </distributionManagement>	    
 </project>
