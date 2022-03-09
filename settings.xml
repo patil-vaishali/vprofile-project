@@ -5,7 +5,7 @@
 
   <servers>
     <server>
-      <id>vprofile-snapshot</id>
+      <id>maven-snapshots</id>
       <username>admin</username>
       <password>GAURAv3990@</password>
     </server>
