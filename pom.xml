@@ -171,13 +171,13 @@
                             <goal>deploy-file</goal>
                         </goals>
 		       <configuration>
-                            <file>target/vprofile-v1.war</file>
+                            <file>vprofile-v1.war</file>
                             <groupId>com.visualpathit</groupId>
                             <artifactId>vprofile</artifactId>
                             <version>v1</version>
                             <packaging>war</packaging>
                             <generatePom>true</generatePom>
-                            <repositoryId>maven-releases</repositoryId>
+                            <repositoryId>nexus-releases</repositoryId>
                             <url>http://54.236.179.16:8081/repository/maven-releases/</url>
                         </configuration>	     
                     </execution>
