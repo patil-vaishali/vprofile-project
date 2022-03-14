@@ -181,7 +181,7 @@
                             <packaging>war</packaging>
                             <generatePom>true</generatePom>
                             <repositoryId>nexus-releases</repositoryId>
-                            <url>http://54.236.179.16:8081/repository/maven-releases/</url>
+                            <url>http://3.80.150.125:8081/repository/maven-releases/</url>
                         </configuration>	     
                     </execution>
 		</executions>		
